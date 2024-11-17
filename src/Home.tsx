@@ -7,9 +7,9 @@ export default function Home() {
   const { todoList, doingList, doneList } = listsProvider;
 
   return (
-    <div className="grid grid-rows-[auto_1fr] gap-[10px] h-full">
+    <div className="grid grid-rows-[auto_1fr] gap-[10px] h-full w-11/12">
       <AddCard />
-      <div className="row-start-2 row-span-1 w-full h-full flex flex-direction-row justify-around gap-[15px]">
+      <div className="row-start-2 row-span-1 w-full h-full flex flex-direction-row justify-around gap-[15px] w-full">
         <TodoContainer title="A Fazer" cardsList={todoList} cardType="todo" />
         <TodoContainer title="Fazendo" cardsList={doingList} cardType="doing" />
         <TodoContainer title="Concluído" cardsList={doneList} cardType="done" />

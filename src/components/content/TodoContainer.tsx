@@ -8,7 +8,7 @@ function TodoContainer(props: {
   cardType: string;
 }) {
   return (
-    <Card className="h-full w-[350px] ">
+    <Card className="h-full w-1/3 ">
       <CardHeader>
         <CardTitle className="text-center">{props.title}</CardTitle>
       </CardHeader>

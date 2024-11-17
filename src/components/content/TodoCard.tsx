@@ -77,12 +77,15 @@ function TodoCard(props: { id: number; title: string; cardType: string }) {
     }
   };
   return (
-    <Card className="h-45 w-64 self-center">
+    <Card className="h-45 min-w-32 w-4/6 self-center">
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
       </CardHeader>
-      <CardContent id={props.id.toString()} className="flex flex-col">
-        <div className="self-end">
+      <CardContent
+        id={props.id.toString()}
+        className="flex flex-col justify-between"
+      >
+        <div className="self-end flex flex-row gap-[4px]">
           {props.cardType == "todo" && (
             <Button
               className="w-auto h-auto p-[5px]"

@@ -44,14 +44,18 @@ export const TodoListsProvider = ({ children }: { children: ReactNode }) => {
   const [todoList, setTodoList] = useState([
     {
       id: 1,
-      title: "Lavar louça",
+      title: "Tusca",
     },
-  ]);
-  const [doingList, setDoingList] = useState([
     {
       id: 2,
       title: "Lavar louça",
     },
+    {
+      id: 5,
+      title: "Estudar",
+    },
+  ]);
+  const [doingList, setDoingList] = useState([
     {
       id: 4,
       title: "Lavar Banheiro",
@@ -60,7 +64,7 @@ export const TodoListsProvider = ({ children }: { children: ReactNode }) => {
   const [doneList, setDoneList] = useState([
     {
       id: 3,
-      title: "Lavar louça",
+      title: "Arrumar a Cama",
     },
   ]);
 
